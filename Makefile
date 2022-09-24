@@ -5,6 +5,10 @@ IPK_NAME = "${NAME}_${VERSION}_${ARCH}.ipk"
 
 all:
 
+	chmod +x ./control/postinst
+	chmod +x ./control/prerm
+	chmod +x ./data/opt/bin/wtfos-auto-naco.sh
+
 	mkdir -p ipk
 	echo "2.0" > ipk/debian-binary
 	cp -r data ipk/
