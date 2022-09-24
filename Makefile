@@ -9,9 +9,9 @@ all:
 	echo "2.0" > ipk/debian-binary
 	cp -r data ipk/
 	cp -r control ipk/
-	cd ipk/control && tar czvf ../control.tar.gz .
-	cd ipk/data && tar czvf ../data.tar.gz .
-	cd ipk/ && tar czvf "./${IPK_NAME}" ./control.tar.gz ./data.tar.gz ./debian-binary
+	cd ipk/control && tar --owner=0 --group=0 czvf ../control.tar.gz .
+	cd ipk/data && tar --owner=0 --group=0 czvf ../data.tar.gz .
+	cd ipk/ && tar --owner=0 --group=0 czvf "./${IPK_NAME}" ./control.tar.gz ./data.tar.gz ./debian-binary
 
 clean:
 	rm -rf ipk
