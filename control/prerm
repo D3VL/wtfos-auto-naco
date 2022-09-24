@@ -1,2 +1,2 @@
 #!/system/bin/sh
-/opt/bin/dinitctl -u disable wtfos-auto-naco || true
+/opt/sbin/dinitctl disable wtfos-auto-naco || true
