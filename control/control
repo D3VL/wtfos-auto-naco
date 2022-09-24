@@ -1,5 +1,5 @@
 Package: fcc-unlock
-Version: 1.0.0
+Version: 1.0.1
 Maintainer: D3VL LTD <jack@d3vl.com>
 Description: Unlocks FCC 1200mw on the Goggles, Vistas and Air Units without the need for naco.txt/naco_pwr.txt
 Architecture: pigeon-all
