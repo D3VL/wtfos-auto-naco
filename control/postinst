@@ -1,3 +1,4 @@
 #!/system/bin/sh
+chmod +x /opt/bin/wtfos-auto-naco.sh
 /opt/bin/wtfos-auto-naco.sh postinst
 /opt/bin/dinitctl -u enable wtfos-auto-naco || true
